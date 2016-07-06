@@ -1,0 +1,16 @@
+var Menu = function (game) {
+    
+}
+
+Menu.prototype = {
+    create: function () {
+        this.background = this.game.add.tileSprite(0, 0, 2048, 2048, 'bg_layer4');
+        this.background.autoScroll(-50, 0);
+        this.background.anchor.setTo(0.5)
+    
+        this.dude = new Dude(this.game, this.game.world.centerX, this.game.world.centerY);
+    },
+    changeLevel: function () {
+        this.game.state.start('Seleccion');
+    }
+}
