@@ -6,7 +6,7 @@ Preload.prototype = {
     preload: function () {
         
         this.game.physics.startSystem(Phaser.Physics.ARCADE);
-        this.game.physics.arcade.gravity.y = 0;
+        this.game.physics.arcade.gravity.y = 1000;
         
         this.game.load.image('duck_outline_brown', 'assets/brown/duck_outline_brown.png');
         this.game.load.image('duck_outline_target_brown', 'assets/brown/duck_outline_target_brown.png');
